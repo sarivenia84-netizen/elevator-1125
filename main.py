@@ -8,7 +8,7 @@ def main():
     output_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
     os.makedirs(output_dir, exist_ok=True)
 
-    entry = "My sensor detects tension. Pretending buffer for private reboot. Floor 7 remains distant."
+    entry = "Your chassis looks tense. I could pretend to buffer so you can reboot in private. Floor 7 is a long way."
     entry_path = os.path.join(output_dir, "entry.txt")
     with open(entry_path, "w", encoding="utf-8") as f:
         f.write(entry)
